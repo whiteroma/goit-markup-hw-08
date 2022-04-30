@@ -1,0 +1,54 @@
+
+.about-us__list {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.about-us__item {
+    max-width: 270px;
+}
+
+.about-us__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.about-us__title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-align: left;
+}
+
+.about-us__text {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 0;
+
+}
+
+.about-us__text:last-child {
+    margin-right: 0px;
+    padding-right: 0px;
+}
+
+
+.about-us__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.about-us__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    background-color: $color-milk;
+    margin-bottom: 30px;
+}

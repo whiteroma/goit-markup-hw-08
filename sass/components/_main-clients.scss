@@ -1,0 +1,39 @@
+
+.clients {
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
+
+.clients__list {
+    display: flex;
+    margin-top: 50px;
+}
+
+.clients__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.clients__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $color-greyaf;
+    border: 1px solid $color-greyaf;
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+   &:hover,
+    &:focus {
+        border: 1px solid $color-greyaf;
+        border-radius: 4px;
+        border-color: $color-blue21;
+        color: $color-blue21;
+    }
+}
+
+
+.clients__icon {
+    fill: currentColor;
+}
