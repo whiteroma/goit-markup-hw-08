@@ -1,16 +1,52 @@
 
 .grid {
+
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: calc(100% / 2);
+        margin: -15px;
+        user-select: none;
+    }
+
+    @media screen and (min-width:1200px) {
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
     user-select: none;
 }
+}
+
+.grid__img {
+    width: 450px;
+    height: 294px;
+
+    @media screen and (min-width:768px) {
+        width: 354px;
+    }
+    
+    @media screen and (min-width:1200px) {
+        width: 370px;
+}
+}
 
 .grid__item {
     display: block;
+
+    @media screen and (max-width:767px) {
+    margin-top: 30px;
+    }
+    
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        margin: 15px;
+        user-select: none;
+    }
+
+    @media screen and (min-width:1200px) {
     margin-left: 30px;
     margin-top: 30px;
     flex-basis: calc((100% - 90px) / 3);
+}
 }
 
 .grid__link {
@@ -34,7 +70,9 @@
 }
 
 .grid__item:nth-child(-n+3) {
+@media screen and (min-width:1200px) {
     margin-top: 0;
+}
 }
 
 .grid__title {
@@ -59,15 +97,19 @@
     border: 1px solid $color-border-4;
     border-top: none;
     padding: 20px 24px;
+
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        width: 354px;
+    }
 }
 
 
 .grid__overflow {
-    width: 370px;
+    width: 450px;
     height: 294px;
     background-color: $color-overflow;
     position: absolute;
-    top: 0;
+    top: 1px;
     left: 0;
     display: flex;
     align-items: center;
@@ -77,6 +119,14 @@
     padding-right: 24px;
     transform: translateY(294px);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width:768px) {
+        width: 354px;
+    }
+
+    @media screen and (min-width:1200px) {
+        width: 370px;
+    }
 }
 
 .grid__description {

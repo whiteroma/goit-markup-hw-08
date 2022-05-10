@@ -15,7 +15,12 @@
   <link rel="stylesheet" href="./css/main.min.css">
 
 </head>
-
+<!-- <button type="button" class="header-nav__button is-open" data-menu>
+  <svg width="40px" height="40px" class="header-nav__icon" aria-label="Переключатель мобильного меню">
+    <use class="header-nav__icon--menu-close" href="./images/symbol-defs.svg#icon-menu-close"></use>
+    <use class="header-nav__icon--menu" href="./images/symbol-defs.svg#icon-menu"></use>
+  </svg>
+</button> -->
 <body>
   <header class="header-section">
     <div class="container header-section__container">
@@ -27,7 +32,7 @@
           <li class="header-nav__item"><a class="header-nav__link" href="./portfolio.html">Портфолио</a></li>
           <li class="header-nav__item"><a class="header-nav__link" href="#">Контакты</a></li>
         </ul>
-      </nav>
+        </nav>
       <ul class="header-contacts">
         <li class="header-contacts__item">
           <a class="header-contacts__link" href="mailto:info@devstudio.com">
@@ -48,10 +53,19 @@
           </a>
         </li>
       </ul>
+      <button width="40px" height="40px" type="button" class="header-nav__button" js-close-menu js-menu-container aria-expanded="false">
+        <svg width="40px" height="40px" class="header-nav__icon" aria-label="Переключатель мобильного меню" >
+          <use class="header-nav__icon--menu" js-open-menu href="./images/symbol-defs.svg#icon-menu"></use>
+          <use class="header-nav__icon--menu-close" js-close-menu href="./images/symbol-defs.svg#icon-menu-close"></use>
+        </svg>
+      </button>
+      <div class="header-nav__menu">
+
+      </div>
     </div>
   </header>
   <main class="main-section">
-    <section class="hero">
+    <section class="section hero">
       <div class="container button-section">
         <h1 class="button-section__title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br>ДЛЯ ВАШЕГО БИЗНЕСА</h1>
         <button type="button" class="button-section__button" data-modal-open>Заказать услугу</button>
@@ -111,8 +125,8 @@
         </ul>
       </div>
     </section>
-    <section class="section">
-      <div class="container what-we-do">
+    <section class="section what-we-do">
+      <div class="container what-we-do__container">
         <h2 class="what-we-do__title">Чем мы занимаемся</h2>
         <ul class="what-we-do__list">
           <li class="what-we-do__item">
@@ -144,10 +158,10 @@
     </section>
     <section class="section our-team">
       <div class="container">
-        <h2>Наша команда</h2>
+        <h2 class="our-team__label">Наша команда</h2>
         <ul class="our-team__list">
           <li class="our-team__item">
-            <img width="270" src="images/Демьяненко.jpg" alt="Игорь Демьяненко" />
+            <img class="our-team__img" src="images/Демьяненко.jpg" alt="Игорь Демьяненко" />
             <div class="our-team__block">
               <h3 class="our-team__name">Игорь Демьяненко</h3>
               <p class="our-team__job">Product Designer</p>
@@ -185,7 +199,7 @@
           </li>
 
           <li class="our-team__item">
-            <img width="270" src="images/Репина.jpg" alt="Ольга Репина" />
+            <img class="our-team__img" src="images/Репина.jpg" alt="Ольга Репина" />
             <div class="our-team__block">
               <h3 class="our-team__name">Ольга Репина</h3>
               <p class="our-team__job">Frontend Developer</p>
@@ -223,7 +237,7 @@
           </li>
 
           <li class="our-team__item">
-            <img width="270" src="images/Тарасов.jpg" alt="Николай Тарасов" />
+            <img class="our-team__img" src="images/Тарасов.jpg" alt="Николай Тарасов" />
             <div class="our-team__block">
               <h3 class="our-team__name">Николай Тарасов</h3>
               <p class="our-team__job">Marketing</p>
@@ -260,7 +274,7 @@
             </div>
           </li>
           <li class="our-team__item">
-            <img width="270" src="images/Ермаков.jpg" alt="Михаил Ермаков" />
+            <img class="our-team__img" src="images/Ермаков.jpg" alt="Михаил Ермаков" />
             <div class="our-team__block">
               <h3 class="our-team__name">Михаил Ермаков</h3>
               <p class="our-team__job">UI Designer</p>
@@ -423,7 +437,6 @@
   <div data-modal class="backdrop is-hidden">
     <div class="modal">
       <button data-modal-close type="button" class="modal__button">
-        <!-- <img alt="cross" width="30" height="30" class="close-modal-logo" src="./images/close-modal.svg"> -->
         <svg width="11" height="11" class="modal__close">
           <use href="./images/symbol-defs.svg#icon-close-modal-cross"></use>
         </svg>
@@ -482,6 +495,13 @@
     </div>
   </div>
   <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
+  <script
+  defer
+  src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+  crossorigin="anonymous"
+></script>
 </body>
 
 </html>

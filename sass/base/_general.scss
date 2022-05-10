@@ -19,9 +19,12 @@ header {
 }
 
 footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
     background-color: $color-footer-background;
+
+    @media screen and (min-width:1200px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 }
 
 p {
@@ -47,21 +50,34 @@ ul {
 }
 
 nav {
-    margin-left: 93px;
+
+    @media screen and (min-width:768px) {
+        margin-left: 88px;
+    }
+
+    @media screen and (min-width:1200px) {
+        margin-left: 93px;
+    }
 }
 
 img {
-    display: block
+    display: block;
+    margin: 0;
 }
 
 h1 {
-    font-size: 44px;
+    font-size: 26px;
+    line-height: 42px;
     font-weight: 900;
-    line-height: 1.36;
     letter-spacing: 0.06em;
     text-align: center;
     color: $color-white;
     margin: 0;
+
+    @media screen and (min-width:1200px) {
+        font-size: 44px;
+        line-height: 1.36;
+    }
 }
 
 h2 {
@@ -72,6 +88,12 @@ h2 {
     text-align: center;
     color: $color-black21;
     margin: 0;
+
+    @media screen and (max-width:1199px) {
+        font-size: 28px;
+        line-height: 32.81px;
+        margin-bottom: 30px;
+    }
 }
 
 h3 {
@@ -98,18 +120,35 @@ address {
 }
 
 .container {
-    width: 1200px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+    width: 480px;
+
+    @media screen and (min-width:768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width:1200px) {
+        width: 1200px;
+    }
 }
 
-.section:nth-child(2n) {
-    padding-top: 94px;
-    padding-bottom: 94px;
+
+@media screen and (min-width:1200px) {
+    .section:nth-child(2n) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
+    .section:nth-child(3) {
+        padding-bottom: 94px;
+    }
 }
 
-.section:nth-child(3) {
-    padding-bottom: 94px;
+@media screen and (max-width:1199px) {
+    .section:not(:first-child) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 }
-
