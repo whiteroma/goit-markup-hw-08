@@ -25,6 +25,7 @@
   <header class="header-section">
     <div class="container header-section__container">
       <a href="./index.html" class="header-logo"><span class="header-logo__span">Web</span>Studio</a>
+      <div class="header-menu is-open" id="header-nav__menu" data-menu>
       <nav class="header-nav">
         <ul class="header-nav__list">
           <li class="header-nav__item"><a href="./index.html"
@@ -53,14 +54,62 @@
           </a>
         </li>
       </ul>
-      <button width="40px" height="40px" type="button" class="header-nav__button" js-close-menu js-menu-container aria-expanded="false">
+    </div>
+      <button width="40px" height="40px" type="button" class="header-nav__button is-open" data-menu-button aria-expanded="false" aria-controls="header-nav__menu">
         <svg width="40px" height="40px" class="header-nav__icon" aria-label="Переключатель мобильного меню" >
-          <use class="header-nav__icon--menu" js-open-menu href="./images/symbol-defs.svg#icon-menu"></use>
-          <use class="header-nav__icon--menu-close" js-close-menu href="./images/symbol-defs.svg#icon-menu-close"></use>
+          <use class="header-nav__icon--menu-close" href="./images/symbol-defs.svg#icon-menu-close"></use>
+          <use class="header-nav__icon--menu" href="./images/symbol-defs.svg#icon-menu"></use>
         </svg>
       </button>
-      <div class="header-nav__menu">
-
+      <!-- <div class="header-menu is-open" id="header-nav__menu" data-menu>
+        <div class="header-menu-nav">
+           <nav class="header-menu-nav__navigation">
+          <ul class="header-menu-nav__list">
+            <li class="header-menu-nav__item header-menu-nav__item--current"><a href="./index.html"
+                class="header-menu-nav__link header-menu-nav__link--current">Студия</a></li>
+            <li class="header-menu-nav__item"><a class="header-menu-nav__link" href="./portfolio.html">Портфолио</a></li>
+            <li class="header-menu-nav__item"><a class="header-menu-nav__link" href="#">Контакты</a></li>
+          </ul>
+          </nav></div>
+        <div class="header-menu-contacts">
+          <ul class="header-menu-contacts__list">
+          <li class="header-menu-contacts__item">
+            <a class="header-menu-contacts__link" href="mailto:info@devstudio.com">
+            
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="header-menu-contacts__item">
+            <a class="header-menu-contacts__link header-menu-contacts__link--phone" href="tel:+380961111111">
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div> -->
+        <!-- <div class="header-menu__social">
+          <ul class="header-menu-social__list">
+            <li class="header-menu-social__item">
+              <a href="#" class="header-menu-social__link">
+                Instagram
+            </a>
+            </li>
+            <li class="header-menu-social__item">
+              <a href="#" class="header-menu-social__link">
+                Twitter
+            </a>
+            </li>
+            <li class="header-menu-social__item">
+              <a href="#" class="header-menu-social__link">
+                Facebook
+            </a>
+            </li>
+            <li class="header-menu-social__item">
+              <a href="#" class="header-menu-social__link">
+                LinkedIn
+            </a>
+            </li>
+          </ul>
+        </div> -->
       </div>
     </div>
   </header>
@@ -495,7 +544,7 @@
     </div>
   </div>
   <script src="./js/modal.js"></script>
-  <script src="./js/mobile-menu.js"></script>
+  <script src="./js/menu-repeta.js"></script>
   <script
   defer
   src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
