@@ -395,7 +395,6 @@ address {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 480px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1071,6 +1070,7 @@ address {
 }
 
 .our-team__item {
+  width: 100%;
   border-radius: 4px;
   background: #fff;
   -webkit-box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001F;
@@ -1102,7 +1102,7 @@ address {
 }
 
 .our-team__img {
-  width: 450px;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -1859,7 +1859,7 @@ address {
 
 .footer-form-block__area {
   height: 50px;
-  width: 450px;
+  width: 100%;
   border: 1px solid #fff;
   background-color: #2F303A;
   -webkit-box-shadow: 0px 4px 4px 0px #00000026;
