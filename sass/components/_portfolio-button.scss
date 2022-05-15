@@ -10,12 +10,10 @@
 }
 
 .portfolio__list {
-    text-align: center;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.62;
     letter-spacing: 0.03em;
-    text-align: center;
     color: $color-black21;
     cursor: pointer;
     border-radius: 4px;
@@ -29,6 +27,7 @@
 }
 
     @media screen and (min-width:1200px) {
+        text-align: center;
         margin-bottom: 50px;
 }
 }
@@ -65,6 +64,7 @@
         0px 1px 2px 0px $color-shadow-7,
         0px 3px 1px 0px $color-border-2;
 }
+
 }
 
 

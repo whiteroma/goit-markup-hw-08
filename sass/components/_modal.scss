@@ -7,6 +7,7 @@
     background-color: $color-modal-backdropbg;
     opacity: 1;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -19,17 +20,23 @@
 }
 
 .modal {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
-    width: 450px;
     height: 609px;
+    max-width: 450px;
+    width: 100%;
     background-color: $color-white;
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+    @media screen and (min-width:480px) {
+    position: absolute;
+    }
+
     @media screen and (min-width:1200px) {
-        width: 528px;
+        position: absolute;
+        max-width: 528px;
         height: 581px;
     }
 }
@@ -88,17 +95,19 @@
 .modal-form__block {
     display: flex;
     flex-direction: column;
-    width: 370px;
+    max-width: 370px;
+    width: 100%;
+
+    @media screen and (min-width:768px) {
+
+    }
 
     @media screen and (min-width:1200px) {
-        width: 448px;
+        max-width: 448px;
 }
 }
 
 .modal-form__label {
-    position: relative;
-    display: flex;
-    flex-direction: column;
     margin-bottom: 10px;
     font-size: 12px;
     font-weight: 400;
@@ -106,6 +115,12 @@
     letter-spacing: 0.01em;
     text-align: left;
     color: $color-grey;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width:480px) {
+        position: relative;
+    }
 
     input {
         margin-top: 4px;
@@ -140,7 +155,11 @@
 }
 
 .modal-form__icon {
+
+    @media screen and (min-width:480px) {
     position: absolute;
+    }
+
     left: 15px;
     bottom: 14px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -148,9 +167,7 @@
 }
 
 .modal-checkbox {
-    display: flex;
-    align-items: baseline;
-    justify-content: center;
+    
     font-size: 12px;
     font-weight: 400;
     line-height: 14px;
@@ -162,6 +179,12 @@
     margin-left: auto;
     margin-right: auto;
     user-select: none;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+
+    @media screen and (min-width:480px) {
+    }
 
 
     input[type="checkbox"] {
@@ -200,7 +223,7 @@
     &:checked+.modal-checkbox__icon {
         background-image: url(/images/check.svg);
         background-color: $color-blue21;
-        background-size: contain;
+        background-size: cover;
         border: none;
         background-origin: border-box;
     }
@@ -227,10 +250,6 @@
 
 
 .modal-form__button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     padding: 10px 55px;
     font-size: 16px;
     font-weight: 700;
@@ -243,6 +262,13 @@
     border: none;
     cursor: pointer;
     margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    @media screen and (min-width:768px) {
+    }
 }
 
 .modal-form__area {

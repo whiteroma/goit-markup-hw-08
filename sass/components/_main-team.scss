@@ -33,6 +33,7 @@
         0px 1px 3px 0px $color-shadow-2;
 
     @media screen and (min-width:768px) and (max-width:1199px) {
+        width: 354px;
         margin: 15px;
     }
 
@@ -40,6 +41,8 @@
     @media screen and (min-width:1200px) {
         display: flex;
         flex-direction: column;
+        width: 270px;
+        margin: 0 auto;
     }
 
     &:not(:first-child) {
@@ -51,14 +54,6 @@
 
 .our-team__img {
     width: 100%;
-
-    @media screen and (min-width:768px) {
-        width: 354px;
-    }
-
-    @media screen and (min-width:1200px) {
-        width: 270px;
-    }
 }
 
 .our-team__item:not(:last-child) {
