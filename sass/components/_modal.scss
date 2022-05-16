@@ -29,13 +29,16 @@
     background-color: $color-white;
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 40px;
 
     @media screen and (min-width:480px) {
     position: absolute;
     }
 
+    @media screen and (max-width:1199px) {
+    }
+
     @media screen and (min-width:1200px) {
-        position: absolute;
         max-width: 528px;
         height: 581px;
     }
@@ -52,8 +55,9 @@
     cursor: pointer;
     background-color: $color-white;
     margin-left: auto;
-    margin-top: 8px;
-    margin-right: 8px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
 
     &:hover {
         .modal__close {
@@ -71,9 +75,6 @@
 
 
 .modal-block {
-    margin-left: 40px;
-    margin-right: 40px;
-
 }
 
 .modal-block__title {
@@ -117,9 +118,9 @@
     color: $color-grey;
     display: flex;
     flex-direction: column;
+    position: relative;
 
     @media screen and (min-width:480px) {
-        position: relative;
     }
 
     input {
@@ -156,10 +157,10 @@
 
 .modal-form__icon {
 
-    @media screen and (min-width:480px) {
-    position: absolute;
+    @media screen and (max-width:1199px) {
     }
 
+    position: absolute;
     left: 15px;
     bottom: 14px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);

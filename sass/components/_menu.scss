@@ -1,4 +1,5 @@
 .header-nav__button {
+    z-index: 3;
     display: block;
     margin-left: auto;
     padding: 0;
@@ -23,7 +24,8 @@
 }
 
 .header-menu {
-    z-index: 999;
+    z-index: 2;
+    overflow: scroll;
 
     @media screen and (min-width:768px) {
         display: flex;
@@ -35,10 +37,8 @@
     @media screen and (max-width:767px) {
         display: none;
         position: absolute;
-        top: 100%;
         left: 0;
         width: 100%;
-        height: 796px;
         background-color: #fff;
         padding-top: 48px;
         padding-bottom: 48px;
@@ -53,10 +53,14 @@
     
 
     &__sociallist {
-        display: flex;
-        justify-self: flex-end;
         margin-top: 32px;
+        max-width: 450px;
+        width: 100%;
         
+    @media screen and (min-width:480px) {
+        display: flex;
+    }
+
     @media screen and (min-width:768px) {
         display: none;
     }
