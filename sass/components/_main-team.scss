@@ -14,7 +14,7 @@
 
     @media screen and (min-width:768px) {
         flex-wrap: wrap;
-        flex-basis: calc(100% / 2);
+        flex-basis: calc((100% - 4 * 15px) / 2);
         margin: -15px;
     }
 

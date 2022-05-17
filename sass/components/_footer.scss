@@ -45,7 +45,7 @@
     align-items: center;
     justify-content: center;
 
-  
+
 
     @media screen and (min-width:1200px) {
         display: inline-block;
@@ -76,21 +76,21 @@
         margin-bottom: 9px;
     }
 
-@media screen and (max-width:1199px) {
-    &:first-child {
-        margin-top: 20px;
-    }
-
-    &:last-child {
-        margin-bottom: 60px;
-    }
-}
-
-&:not(:last-child) {
     @media screen and (max-width:1199px) {
-        margin-bottom: 8px;
+        &:first-child {
+            margin-top: 20px;
+        }
+
+        &:last-child {
+            margin-bottom: 60px;
+        }
     }
-}
+
+    &:not(:last-child) {
+        @media screen and (max-width:1199px) {
+            margin-bottom: 8px;
+        }
+    }
 }
 
 .footer-address__link {

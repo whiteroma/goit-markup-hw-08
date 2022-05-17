@@ -18,48 +18,50 @@
   <header class="header-section">
     <div class="container header-section__container">
       <a href="./index.html" class="header-logo"><span class="header-logo__span">Web</span>Studio</a>
-      <button width="40px" height="40px" type="button" class="header-nav__button" data-menu-button aria-expanded="false" aria-controls="header-nav__menu">
-        <svg width="40px" height="40px" class="header-nav__icon" aria-label="Переключатель мобильного меню" >
+      <button width="40px" height="40px" type="button" class="header-nav__button" data-menu-button aria-expanded="false"
+        aria-controls="header-nav__menu">
+        <svg width="40px" height="40px" class="header-nav__icon" aria-label="Переключатель мобильного меню">
           <use class="header-nav__icon--menu-close" href="./images/symbol-defs.svg#icon-menu-close"></use>
           <use class="header-nav__icon--menu" href="./images/symbol-defs.svg#icon-menu"></use>
         </svg>
       </button>
-       <div class="header-menu" id="header-menu" data-menu>
-          <nav class="header-nav">
-            <ul class="header-nav__list">
-              <li class="header-nav__item"><a href="./index.html" class="header-nav__link">Студия</a></li>
-              <li class="header-nav__item"><a class="header-nav__link header-nav__link--current" href="./portfolio.html">Портфолио</a></li>
-              <li class="header-nav__item"><a class="header-nav__link" href="#">Контакты</a></li>
-            </ul>
-            </nav>
-          <ul class="header-contacts">
-            <li class="header-contacts__item">
-              <a class="header-contacts__link header-contacts__link--mail" href="mailto:info@devstudio.com">
-                <svg class="header-contacts__icon">
-                  <use href="./images/symbol-defs.svg#icon-envelope">
-                  </use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="header-contacts__item">
-              <a class="header-contacts__link header-contacts__link--phone" href="tel:+380961111111">
-                <svg class="header-contacts__icon">
-                  <use href="./images/symbol-defs.svg#icon-phone">
-                  </use>
-                </svg>
-                +38 096 111 11 11
-              </a>
-            </li>
-            </ul>
-          <ul class="header-menu__sociallist">
-            <li class="header-menu__socialitem"><a href="#" class="header-menu__sociallink">Instagram</a></li>
-            <li class="header-menu__socialitem"><a href="#" class="header-menu__sociallink">Twitter</a></li>
-            <li class="header-menu__socialitem"><a href="#" class="header-menu__sociallink">Facebook</a></li>
-            <li class="header-menu__socialitem"><a href="#" class="header-menu__sociallink">LinkedIn</a></li>
+      <div class="header-menu" id="header-menu" data-menu>
+        <nav class="header-nav">
+          <ul class="header-nav__list">
+            <li class="header-nav__item"><a href="./index.html" class="header-nav__link">Студия</a></li>
+            <li class="header-nav__item"><a class="header-nav__link header-nav__link--current"
+                href="./portfolio.html">Портфолио</a></li>
+            <li class="header-nav__item"><a class="header-nav__link" href="#">Контакты</a></li>
           </ul>
-       </div>
+        </nav>
+        <ul class="header-contacts">
+          <li class="header-contacts__item">
+            <a class="header-contacts__link header-contacts__link--mail" href="mailto:info@devstudio.com">
+              <svg class="header-contacts__icon">
+                <use href="./images/symbol-defs.svg#icon-envelope">
+                </use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="header-contacts__item">
+            <a class="header-contacts__link header-contacts__link--phone" href="tel:+380961111111">
+              <svg class="header-contacts__icon">
+                <use href="./images/symbol-defs.svg#icon-phone">
+                </use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+        <ul class="header-menu__sociallist">
+          <li class="header-menu__socialitem"><a href="#" class="header-menu__sociallink">Instagram</a></li>
+          <li class="header-menu__socialitem"><a href="#" class="header-menu__sociallink">Twitter</a></li>
+          <li class="header-menu__socialitem"><a href="#" class="header-menu__sociallink">Facebook</a></li>
+          <li class="header-menu__socialitem"><a href="#" class="header-menu__sociallink">LinkedIn</a></li>
+        </ul>
       </div>
+    </div>
     </div>
   </header>
   <main class="main-section">
@@ -76,8 +78,14 @@
         <ul class="grid">
           <li class="grid__item">
             <a class="grid__link" href="#">
-              <div class="grid__hiddenblock">
-                <img class="grid__img" src="./images/Технокряк.jpg" alt="Технокряк">
+              <div class="grid__hiddenblock">            
+                <picture>
+                <source  srcset="images/Технокряк.jpg 1x, images/Технокряк@2x.jpg 2x" media="(min-width:1200px)"/>
+                  <source  srcset="images/ТехнокрякТаб.jpg 1x, images/ТехнокрякТаб@2x.jpg 2x" media="(min-width:768px)"/>
+                  <source  srcset="images/ТехнокрякТел.jpg 1x, images/ТехнокрякТел@2x.jpg 2x" media="(max-width:767px)"/>
+              <img class="grid__img"
+                src="images/Технокряк.jpg" alt="Технокряк" />
+              </picture>
                 <div class="grid__overflow">
                   <p class="grid__description">Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или
@@ -95,7 +103,13 @@
           <li class="grid__item">
             <a class="grid__link" href="#">
               <div class="grid__hiddenblock">
-                <img class="grid__img" src="./images/Постер.jpg" alt="Постер">
+                <picture>
+                  <source  srcset="images/Постер.jpg 1x, images/Постер@2x.jpg 2x" media="(min-width:1200px)"/>
+                    <source  srcset="images/ПостерТаб.jpg 1x, images/ПостерТаб@2x.jpg 2x" media="(min-width:768px)"/>
+                    <source  srcset="images/ПостерТел.jpg 1x, images/ПостерТел@2x.jpg 2x" media="(max-width:767px)"/>
+                <img class="grid__img"
+                  src="images/Постер.jpg" alt="Постер" />
+                </picture>
                 <div class="grid__overflow">
                   <p class="grid__description">Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или
@@ -112,7 +126,13 @@
           <li class="grid__item">
             <a class="grid__link" href="#">
               <div class="grid__hiddenblock">
-                <img class="grid__img" src="./images/Ресторан.jpg" alt="Ресторан">
+                <picture>
+                  <source  srcset="images/Ресторан.jpg 1x, images/Ресторан@2x.jpg 2x" media="(min-width:1200px)"/>
+                    <source  srcset="images/РесторанТаб.jpg 1x, images/РесторанТаб@2x.jpg 2x" media="(min-width:768px)"/>
+                    <source  srcset="images/РесторанТел.jpg 1x, images/РесторанТел@2x.jpg 2x" media="(max-width:767px)"/>
+                <img class="grid__img"
+                  src="images/Ресторан.jpg" alt="Ресторан" />
+                </picture>
                 <div class="grid__overflow">
                   <p class="grid__description">Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или
@@ -128,7 +148,13 @@
           <li class="grid__item">
             <a class="grid__link" href="#">
               <div class="grid__hiddenblock">
-                <img class="grid__img" src="./images/Наушники.jpg" alt="Наушники">
+                <picture>
+                  <source  srcset="images/Наушники.jpg 1x, images/Наушники@2x.jpg 2x" media="(min-width:1200px)"/>
+                    <source  srcset="images/НаушникиТаб.jpg 1x, images/НаушникиТаб@2x.jpg 2x" media="(min-width:768px)"/>
+                    <source  srcset="images/НаушникиТел.jpg 1x, images/НаушникиТел@2x.jpg 2x" media="(max-width:767px)"/>
+                <img class="grid__img"
+                  src="images/Наушники.jpg" alt="Наушники" />
+                </picture>
                 <div class="grid__overflow">
                   <p class="grid__description">Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или
@@ -144,7 +170,13 @@
           <li class="grid__item">
             <a class="grid__link" href="#">
               <div class="grid__hiddenblock">
-                <img class="grid__img" src="./images/Коробки.jpg" alt="Коробки">
+                <picture>
+                  <source  srcset="images/Коробки.jpg 1x, images/Коробки@2x.jpg 2x" media="(min-width:1200px)"/>
+                    <source  srcset="images/КоробкиТаб.jpg 1x, images/КоробкиТаб@2x.jpg 2x" media="(min-width:768px)"/>
+                    <source  srcset="images/КоробкиТел.jpg 1x, images/КоробкиТел@2x.jpg 2x" media="(max-width:767px)"/>
+                <img class="grid__img"
+                  src="images/Коробки.jpg" alt="Коробки" />
+                </picture>
                 <div class="grid__overflow">
                   <p class="grid__description">Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или
@@ -160,7 +192,13 @@
           <li class="grid__item">
             <a class="grid__link" href="#">
               <div class="grid__hiddenblock">
-                <img class="grid__img" src="./images/Монитор.jpg" alt="Монитор">
+                <picture>
+                  <source  srcset="images/Монитор.jpg 1x, images/Монитор@2x.jpg 2x" media="(min-width:1200px)"/>
+                    <source  srcset="images/МониторТаб.jpg 1x, images/МониторТаб@2x.jpg 2x" media="(min-width:768px)"/>
+                    <source  srcset="images/МониторТел.jpg 1x, images/МониторТел@2x.jpg 2x" media="(max-width:767px)"/>
+                <img class="grid__img"
+                  src="images/Монитор.jpg" alt="Монитор" />
+                </picture>
                 <div class="grid__overflow">
                   <p class="grid__description">Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или
@@ -176,7 +214,13 @@
           <li class="grid__item">
             <a class="grid__link" href="#">
               <div class="grid__hiddenblock">
-                <img class="grid__img" src="./images/Издание.jpg" alt="Издание">
+                <picture>
+                  <source  srcset="images/Издание.jpg 1x, images/Издание@2x.jpg 2x" media="(min-width:1200px)"/>
+                    <source  srcset="images/ИзданиеТаб.jpg 1x, images/ИзданиеТаб@2x.jpg 2x" media="(min-width:768px)"/>
+                    <source  srcset="images/ИзданиеТел.jpg 1x, images/ИзданиеТел@2x.jpg 2x" media="(max-width:767px)"/>
+                <img class="grid__img"
+                  src="images/Издание.jpg" alt="Издание" />
+                </picture>
                 <div class="grid__overflow">
                   <p class="grid__description">Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или
@@ -192,7 +236,13 @@
           <li class="grid__item">
             <a class="grid__link" href="#">
               <div class="grid__hiddenblock">
-                <img class="grid__img" src="./images/Лаб.jpg" alt="Лаб">
+                <picture>
+                  <source  srcset="images/Лаб.jpg 1x, images/Лаб@2x.jpg 2x" media="(min-width:1200px)"/>
+                    <source  srcset="images/ЛабТаб.jpg 1x, images/ЛабТаб@2x.jpg 2x" media="(min-width:768px)"/>
+                    <source  srcset="images/ЛабТел.jpg 1x, images/ЛабТел@2x.jpg 2x" media="(max-width:767px)"/>
+                <img class="grid__img"
+                  src="images/Лаб.jpg" alt="Лаб" />
+                </picture>
                 <div class="grid__overflow">
                   <p class="grid__description">Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или
@@ -208,7 +258,13 @@
           <li class="grid__item">
             <a class="grid__link" href="#">
               <div class="grid__hiddenblock">
-                <img class="grid__img" src="./images/Growing.jpg" alt="Growing">
+                <picture>
+                  <source  srcset="images/Growing.jpg 1x, images/Growing@2x.jpg 2x" media="(min-width:1200px)"/>
+                    <source  srcset="images/GrowingTab.jpg 1x, images/GrowingTab@2x.jpg 2x" media="(min-width:768px)"/>
+                    <source  srcset="images/GrowingTel.jpg 1x, images/GrowingTel@2x.jpg 2x" media="(max-width:767px)"/>
+                <img class="grid__img"
+                  src="images/Growing.jpg" alt="Growing" />
+                </picture>
                 <div class="grid__overflow">
                   <p class="grid__description">Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или
@@ -298,12 +354,9 @@
   </footer>
   <script src="./js/modal.js"></script>
   <script src="./js/menu-repeta.js"></script>
-  <script
-  defer
-  src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-  crossorigin="anonymous"
-></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -6,17 +6,47 @@
     padding-bottom: 118px;
     background-color: $color-footer-background;
     background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/BgImg.jpg);
+        url(../images/BgImgTel.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;
+    
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) { 
+        background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/BgImgTel@2x.jpg);
+    }
+        
+
+
+    @media screen and (min-width:768px) {
+        min-width: 768px;
+        min-height: 400px;
+        background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/BgImgTab.jpg);
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/BgImgTab@2x.jpg);
+        }
+    }
 
     @media screen and (min-width:1200px) {
         padding-top: 200px;
         padding-bottom: 200px;
         max-width: 1600px;
         min-height: 600px;
+        background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/BgImg.jpg);
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/BgImg@2x.jpg);
+        }
     }
 }
 

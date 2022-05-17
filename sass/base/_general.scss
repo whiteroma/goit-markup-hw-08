@@ -9,6 +9,7 @@ html {
 }
 
 body {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     font-family: $font-body;
     text-decoration: none;
     margin: 0 auto;
@@ -51,6 +52,7 @@ li {
 ul {
     margin: 0;
     padding: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 nav {
@@ -119,6 +121,7 @@ a {
     letter-spacing: 0.02em;
     text-align: left;
     text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 address {
