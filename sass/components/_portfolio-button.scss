@@ -32,13 +32,17 @@
 }
 }
 
-.portfolio__item:not(:first-child) {
-
-    @media screen and (min-width:1200px) {
+.portfolio__item {
+    &:not(:first-child) {
     margin-left: 8px;
+ 
 }
+    &:nth-child(-n+3) {
+        @media screen and (max-width:767px) {
+            margin-bottom: 15px;
+    }
+    }
 }
-
 
 
 .portfolio__button {

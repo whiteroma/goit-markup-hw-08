@@ -211,11 +211,16 @@
 
 .footer-form-block {
 
+
     &:focus-within {
         .footer-form-block__area {
             outline: none;
             border-color: $color-white;
         }
+    }
+
+    @media screen and (min-width:768px) {
+        width: 450px;
     }
 
     @media screen and (min-width:1200px) {
@@ -231,6 +236,7 @@
 
 .footer-form-block__area {
     height: 50px;
+    max-width: 450px;
     width: 100%;
     border: 1px solid $color-white;
     background-color: $color-footer-background;
@@ -247,9 +253,13 @@
     color: $color-white;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+    @media screen and (min-width:768px) {
+        
+    }
+
     @media screen and (min-width:1200px) {
         height: 50px;
-        width: 358px;
+        max-width: 358px;
         margin-right: 12px;
 
     }
