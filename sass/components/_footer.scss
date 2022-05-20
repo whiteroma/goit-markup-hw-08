@@ -20,7 +20,6 @@
     @media screen and (min-width:1200px) {
         display: flex;
         align-items: baseline;
-        justify-content: center;
         padding: 0;
     }
 }
@@ -28,6 +27,10 @@
 .footer-logo {
     @media screen and (min-width:768px) and (max-width:1199px) {
         margin-right: 165px;
+    }
+
+    @media screen and (min-width:1200px) {
+        width: 231px;
     }
 }
 
@@ -122,8 +125,11 @@
 .footer-icons {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+
+    @media screen and (max-width:1199px) {
+    align-items: center;
+    }
 
     @media screen and (min-width:1200px) {
         margin-left: 70px;
@@ -150,6 +156,9 @@
 
     @media screen and (min-width:1200px) {
         margin-top: 20px;
+        display: flex;
+        text-align: left;
+        justify-content: flex-start;
     }
 }
 
@@ -227,6 +236,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        width: 570px;
     }
 
     margin-left: auto;
@@ -259,9 +269,8 @@
 
     @media screen and (min-width:1200px) {
         height: 50px;
-        max-width: 358px;
         margin-right: 12px;
-
+        width: 358px;
     }
 }
 

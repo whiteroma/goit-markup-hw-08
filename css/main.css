@@ -658,6 +658,22 @@ address {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-contacts__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: auto;
+  }
+}
+
 .header-contacts {
   font-size: 14px;
   font-weight: 500;
@@ -1748,9 +1764,6 @@ address {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     padding: 0;
   }
 }
@@ -1758,6 +1771,12 @@ address {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-logo {
     margin-right: 165px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-logo {
+    width: 231px;
   }
 }
 
@@ -1873,12 +1892,17 @@ address {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-icons {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1906,6 +1930,13 @@ address {
 @media screen and (min-width: 1200px) {
   .footer-icons__list {
     margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: left;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
@@ -1996,6 +2027,7 @@ address {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    width: 570px;
   }
 }
 
@@ -2024,8 +2056,8 @@ address {
 @media screen and (min-width: 1200px) {
   .footer-form-block__area {
     height: 50px;
-    max-width: 358px;
     margin-right: 12px;
+    width: 358px;
   }
 }
 
@@ -2108,7 +2140,6 @@ address {
   left: 50%;
   max-width: 450px;
   width: 100%;
-  height: 100vh;
   background-color: #fff;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
@@ -2446,7 +2477,7 @@ address {
 @media screen and (max-width: 767px) {
   .header-menu {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;

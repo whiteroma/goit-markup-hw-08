@@ -142,6 +142,9 @@
     letter-spacing: 0.03em;
     text-align: left;
     color: $color-white;
+
+    @media screen and (max-width:479px) {
+    }
 }
 
 .grid__hiddenblock {

@@ -183,6 +183,15 @@
 }
 
 
+.header-contacts__block {
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: auto;
+    }
+
+}
 
 .header-contacts {
     font-size: 14px;
