@@ -276,6 +276,10 @@
             letter-spacing: 0.02em;
             text-align: left;
             color: $color-blue21;
+
+            @media screen and (max-width:479px) {  
+                font-size: 32px;
+            }
         }
 
         &--mail {
