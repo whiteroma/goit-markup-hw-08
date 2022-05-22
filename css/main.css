@@ -2398,7 +2398,7 @@ address {
 }
 
 .modal-checkbox__area:checked + .modal-checkbox__icon {
-  background-image: url(/images/check.svg);
+  background-image: url(../images/check.svg);
   background-color: #2196F3;
   background-size: cover;
   border: none;
@@ -2458,6 +2458,9 @@ address {
 }
 
 .header-nav__button {
+  position: fixed;
+  right: 0;
+  top: 10px;
   z-index: 3;
   display: block;
   margin-left: auto;
